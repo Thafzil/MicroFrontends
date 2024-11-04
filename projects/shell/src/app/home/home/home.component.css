@@ -1,0 +1,15 @@
+.micro {
+  font-size: 5rem; /* Starting font size */
+  animation: shrinkExpand 5s ease-in-out infinite; /* Animation properties */
+}
+
+/* Keyframe animation for shrinking and expanding */
+@keyframes shrinkExpand {
+  0%,
+  100% {
+    font-size: 4rem; /* Original size */
+  }
+  50% {
+    font-size: 0.25rem; /* Minimum size */
+  }
+}

@@ -1,0 +1,13 @@
+<div class="container mt-4">
+  <h2>User List</h2>
+  <div *ngIf="users.length; else loading">
+    <div *ngFor="let user of users" class="card mb-2 p-2">
+      <h5>{{ user.name }}</h5>
+      <p>Email: {{ user.email }}</p>
+      <p>Phone: {{ user.phone }}</p>
+    </div>
+  </div>
+  <ng-template #loading>
+    <p>Loading users...</p>
+  </ng-template>
+</div>
